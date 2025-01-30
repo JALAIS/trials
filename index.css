@@ -1,0 +1,418 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+/* Start Of Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#090909 ;
+    padding: 10px 20px;
+    font-family: 'Courier New';
+}
+
+.logo{
+    color: #dce2e7;
+    font-size: 50px;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #dce2e7;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color:#73919e;
+    border-radius: 5px;
+}
+/* End Of Navigation Bar */
+/* Section styling */
+.section {
+    text-align: center;
+}
+
+.home {
+    background-color: #f1f1f1;
+}
+
+.gallery {
+    background-color: #2c2b2e;
+    font-family: 'Courier New';
+}
+.contacts {
+    background-color:#161616;
+
+}
+
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .navbar {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav .navbar li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+/* END */
+/* START OF HOME STYLE */
+.hero {
+    background-color: #161616;
+    color: white;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'Courier New';
+}
+
+/* END OF HOME STYLE */
+/* START OF HOME ABOUT */
+.about-content{
+    font-family: 'Courier New';
+    background-color: black;
+    color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #d7d7d7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content styling */
+.text-content {
+    max-width: 750px;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+/* END OF HOME ABOUT */
+/* START OF GALLERY */
+
+/* Card gallery container */
+.card-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual card styling */
+.card {
+    position: relative;
+    background-color: #dce4e6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image styling within the card */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Card info section (title and description) */
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    font-size: 0.9em;
+    color: #555;
+}
+#gallerys   h1{
+    font-size: 50px;
+    color: #f4f4f4;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .card-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-gallery {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+/* END OF GALLERY */
+
+/* START OF CONTACTS */
+
+.skills-section {
+    max-width: 800px;
+    padding: 50px;
+    background-color: #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    
+    
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Courier New';
+}
+
+/* Skill container for individual skill */
+.skill {
+    margin: 20px 0;
+    text-align: left;
+    
+}
+
+/* Skill label styling */
+.skill label {
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Courier New';
+    
+}
+
+/* Progress bar container */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Progress fill (this is the actual progress) */
+.progress {
+    background-color: black; /* Green color for progress */
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Adding hover effect for the progress bar */
+.progress-bar:hover .progress {
+    background-color: #97acb3; /* Slightly darker green on hover */
+}
+/* END OF CONTACTS */
+
+
+
+/* START OF FINDING */
+
+#contact{
+    background-color: #2c2b2e;
+    padding: 120px;
+}
+.color {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    font-family: 'Courier New'; 
+    margin: 40px auto;
+    border-radius: 12px;
+    padding: 50px;
+  }
+  
+  .color h2 {
+    text-align: center;
+    font-size: 28px; 
+    margin-bottom: 20px; 
+    color: #333; 
+  }
+  
+  .color ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .color li {
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    color: #555; 
+  }
+  
+  .color li strong {
+    color: #333;
+  }
+  
+  .color a {
+    text-decoration: none;
+    color: #0077cc; 
+    font-weight: bold;
+  }
+  
+  .color a:hover {
+    color: #005fa3; 
+    text-decoration: underline; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
+  }
+  
+  /* Responsive Design (for smaller screens) */
+  @media (max-width: 600px) {
+    #contact {
+      padding: 20px; /* Less padding for smaller screens */
+      width: 95%; /* Makes the section almost full width */
+    }
+  }
+  /* END OF FINDING */
+
+/* Footer styling */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    font-size: 0.9em;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }}
+
+    .footer-right {
+        margin-top: 10px;
+    }
+
+    .footer-left {
+        margin-bottom: 10px;
+    }
+    /* END OF FOOTER */
